@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.logo {
+  width: 120px;
+}
+.destaque {
+  background: #3498db;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.produtos {
+  padding: 20px;
+}
+
+.produtos-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 calc(50% - 20px);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .destaque {
+    padding: 20px 10px;
+  }
+
+  .produtos-grid {
+    flex-direction: column;
+  }
+
+  .produto-card {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+  }
+
+  .destaque {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  .produto-card {
+    padding: 10px;
+  }
+}
